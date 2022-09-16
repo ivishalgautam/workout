@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  box-shadow: 0 0 0.5em #000;
+}
+
+nav > ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+ul > li:not(:last-child) {
+  margin-right: 3em;
+}
+ul li a {
+  color: #000;
+}
+/* header end */
+
+/* section start */
+section {
+  min-height: calc(100vh - 55px);
+  max-width: 100%;
+  margin: 0 2em;
+  margin-top: 4em;
+  padding: auto 0;
+}
+
+.workouts-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.workout {
+  flex: 1;
+  height: 20em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.workout .content {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  display: flex;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.workout .content .h4,
+.workout .content div {
+  position: absolute;
+  top: 0;
+  padding: 1em;
+}
+.workout .content .h4 {
+  left: 0;
+}
+
+.workout .content div {
+  right: 0;
+}
+
+.workout:hover {
+  flex: 2;
+}
+
+.workout > img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(70%);
+  object-fit: cover;
+  object-position: center;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.workout > img:hover {
+  scale: 1.2;
+}
+.show {
+  display: block !important;
+}
