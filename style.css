@@ -53,7 +53,7 @@ section {
   flex: 1;
   height: 20em;
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s linear;
 }
 
 .workout .content {
